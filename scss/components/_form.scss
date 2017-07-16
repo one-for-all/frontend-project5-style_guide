@@ -1,0 +1,19 @@
+.form {
+  text-align: center;
+  width: 100%;
+  @include e(label) {
+    @include m(hidden) {
+      @extend %hidden;
+    }
+  }
+  @include e(input) {
+    width: 95%;
+    padding: 10px 10px;
+    font-family: $font-family--primary;
+    font-size: 1.1rem;
+    border: none;
+    border-bottom: 8px solid $color-blockquote-border;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+}

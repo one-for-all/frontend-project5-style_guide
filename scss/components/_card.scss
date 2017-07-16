@@ -1,0 +1,5 @@
+.card {
+  @include mq(medium) {
+    width: 80%;
+  }
+}

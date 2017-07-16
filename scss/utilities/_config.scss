@@ -1,0 +1,82 @@
+/**********************************
+  Fonts
+**********************************/
+$font-url--google: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800";
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+$font-family--primary: 'Open Sans', sans-serif;
+$font-family--secondary: sans-serif;
+
+$font-weight--thin: 300;
+$font-weight--normal: 400;
+$font-weight--bold: 700;
+$font-weight--x-bold: 800;
+
+/**********************************
+  Colors
+**********************************/
+$black: #0b0b0b;
+$brown: #535b61;
+$white: #fff;
+$green: #00ecc4;
+$blue: #00e2ff;
+$brown-dark: #575757;
+$emerald: #59cd90;
+$geraldine: #ff808d;
+$tangerine: #ff9276;
+$melrose: #c8bcff;
+$pastel-green: #5cda79;
+$chetwode-blue: #8786de;
+$harvest-gold: #e5b376;
+$lavender: #dd70ea;
+$mint-green: #81f397;
+$terracotta: #e47d66;
+$fountain-blue: #60c6ac;
+
+$color-text: $brown;
+$color-background-link-on: $green;
+$color-headline-prim: $green;
+$color-link-on: $white;
+$color-btn: $white;
+$color-link: $blue;
+$color-blockquote: $brown-dark;
+$color-blockquote-border: $green;
+$color-input-border: $green;
+
+$theme-colors: (
+  default: $blue,
+  success: $emerald,
+  error: $geraldine,
+  warning: $tangerine,
+  info: $melrose
+);
+
+$grid-theme-colors: (
+  2: blue,
+  3: $lavender,
+  4: $harvest-gold,
+  5: $mint-green,
+  6: $chetwode-blue,
+  7: $terracotta,
+  8: $fountain-blue,
+  9: blue,
+  10: blue,
+  11: blue,
+  12: $pastel-green
+);
+
+/**********************************
+  Breakpoints
+**********************************/
+$brkpoint-med: 769px;
+$brkpoint-lg: 1024px;
+
+
+/**********************************
+  Grid
+**********************************/
+$grid-col-width: 65px;
+$grid-gutter-width: 20px;
+$grid-col-num: 12;
+$grid-cont-max-width: 1050px;

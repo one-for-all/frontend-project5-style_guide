@@ -1,0 +1,32 @@
+.headline {
+  @include m(primary) {
+    @extend %headline;
+    color: $color-headline-prim;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: $font-weight--bold;
+    font-size: 2rem;
+    @include mq(medium) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @include m(secondary) {
+    @extend %headline;
+    color: $color-text;
+    font-weight: $font-weight--thin;
+    font-size: 1.1rem;
+    &[id="buttons"] {
+      display: none;
+      @include mq(medium) {
+        display: block;
+      }
+    }
+    &[id="grid"] {
+      display: none;
+    }
+    @include mq(medium) {
+      font-size: 1.4rem;
+    }
+  }
+}

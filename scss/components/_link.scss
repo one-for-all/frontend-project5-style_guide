@@ -1,0 +1,7 @@
+.link {
+  @extend %link;
+  margin-bottom: 50px;
+  @include mq(medium) {
+    margin-bottom: 0;
+  }
+}

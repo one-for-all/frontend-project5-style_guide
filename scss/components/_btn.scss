@@ -1,0 +1,21 @@
+.btn {
+  @include m(default) {
+    @extend %btn;
+  }
+  @include m(success) {
+    @extend %btn;
+  }
+  @include m(error) {
+    @extend %btn;
+  }
+  @include m(warning) {
+    @extend %btn;
+  }
+  @include m(info) {
+    @extend %btn;
+  }
+}
+
+.theme__colors.btn {
+  @include bg-color($theme-colors);
+}

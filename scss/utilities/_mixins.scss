@@ -1,0 +1,55 @@
+/**********************************
+  Media Queries
+**********************************/
+@mixin mq($break) {
+  @if $break == "medium" {
+    @media (min-width: $brkpoint-med) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $brkpoint-lg) {
+      @content;
+    }
+  }
+  @else {
+   	@error "Whoops! No value could be retrieved for `#{$break}`. ";
+  }
+}
+
+/**********************************
+  Flexbox
+**********************************/
+@mixin flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq(medium) {
+    flex-direction: row;
+  }
+}
+
+/**********************************
+  Element and Modifiers BEM
+**********************************/
+@mixin e($element) {
+	&__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+/**********************************
+  Theme colors
+**********************************/
+@mixin bg-color($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}

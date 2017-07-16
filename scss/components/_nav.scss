@@ -1,0 +1,8 @@
+.nav {
+  @include e(item) {
+    @extend %nav-item;
+  }
+  @include mq(medium) {
+    display: flex;
+  }
+}

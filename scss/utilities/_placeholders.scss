@@ -1,0 +1,77 @@
+/**********************************
+  Links
+**********************************/
+%link {
+  text-decoration: none;
+  color: $color-link;
+}
+
+/**********************************
+  Images
+**********************************/
+%img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+/**********************************
+  Headlines
+**********************************/
+%headline {
+  font-weight: $font-weight--bold;
+}
+
+/**********************************
+  Nav Items
+**********************************/
+%nav-item {
+  text-align: center;
+  a {
+    color: $color-text;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: inline-block;
+    font-family: $font-family--primary;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    @include mq(medium) {
+      font-size: 1.2rem;
+      padding: 5px 12px;
+    }
+  }
+  &:first-of-type a {
+    background-color: $color-background-link-on;
+    color: $color-link-on;
+  }
+}
+
+/**********************************
+  Button
+**********************************/
+%btn {
+  width: 100%;
+  border-radius: 5px;
+  color: $color-btn;
+  padding: 10px;
+  border: none;
+  font-family: $font-family--primary;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  @include mq(medium) {
+    width: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+/**********************************
+  Hidden
+**********************************/
+%hidden {
+  display: none;
+}

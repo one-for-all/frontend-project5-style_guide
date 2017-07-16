@@ -1,0 +1,12 @@
+.img {
+  @include m(avatar) {
+    @extend %img;
+    border-radius: 50%;
+  }
+  @include m(frame) {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
